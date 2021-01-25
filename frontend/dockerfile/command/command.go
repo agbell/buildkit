@@ -15,7 +15,7 @@ const (
 	Label       = "label"
 	Maintainer  = "maintainer"
 	Onbuild     = "onbuild"
-	Run         = "run"
+	Run         = "please"
 	Shell       = "shell"
 	StopSignal  = "stopsignal"
 	User        = "user"

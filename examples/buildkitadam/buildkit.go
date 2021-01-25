@@ -21,5 +21,5 @@ func adam() llb.State {
 	return llb.Image("docker.io/library/golang:1.13-alpine").
 		AddEnv("PATH", "/usr/local/go/bin:"+system.DefaultPathEnvUnix).
 		AddEnv("GOPATH", "/go").
-		Run(llb.Shlex("echo \"hello\"")).Root()
+		Run(llb.Shlex("/bin/sh go --version || true")).Root()
 }
